@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+body {
+  background-color: hsl(222, 26%, 31%);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+  width: 35%;
+}
+
+.heading-box {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.heading-box h1 {
+  font-size: 1.5rem;
+}
+
+.theme-box {
+  display: flex;
+}
+.theme-text {
+  font-size: 0.6rem;
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: 1px;
+  font-weight: 700;
+  /* border: 2px solid yellow; */
+}
+.theme-switch {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 1rem;
+}
+.theme-number {
+  display: flex;
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.5rem;
+}
+.theme-slider {
+  margin-top: 0.2rem;
+  height: 1.1rem;
+  width: 3.4rem;
+  border-radius: 1.5rem;
+  background-color: hsl(223, 31%, 20%);
+  padding: 0.2rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.slider-button {
+  background-color: hsl(6, 63%, 50%);
+  border: none;
+  border-radius: 50%;
+  width: 25%;
+  height: 100%;
+}
+
+.result-box {
+  color: white;
+  margin: 1rem;
+  min-height: 10vh;
+  background-color: hsl(198, 20%, 13%);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1.5rem;
+  font-size: 2.5rem;
+}
+.numpad-box {
+  border-radius: 0.5rem;
+  margin: 1rem;
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: hsl(223, 31%, 20%);
+}
+.btn {
+  border: none;
+  margin: 0.5rem;
+  text-align: center;
+  height: 3.5rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  font-size: 32px;
+  box-shadow: 0px 3px hsl(28, 16%, 65%);
+  background-color: hsl(30, 25%, 89%);
+  color: hsl(221, 14%, 31%);
+  padding-top: 8px;
+}
+.btn4,
+.btn17 {
+  color: white;
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: 0px 3px hsl(224, 28%, 35%);
+  font-size: 1rem;
+}
+.btn17 {
+  grid-column: 1/3;
+}
+.btn18 {
+  background-color: hsl(6, 63%, 50%);
+  box-shadow: 0px 3px hsl(6, 70%, 34%);
+  color: white;
+  grid-column: 3/5;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 1080px) {
+  .calculator {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .calculator {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .calculator {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .calculator {
+    width: 100%;
+  }
+}
